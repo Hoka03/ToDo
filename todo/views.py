@@ -39,4 +39,4 @@ class TodoUpdateDeleteAPIView(APIView):
     def delete(self, request, pk):
         todos = get_object_or_404(ToDO, pk=pk)
         todos.delete()
-        return Response(todos, status=status.HTTP_204_NO_CONTENT)
+        return Response(status=status.HTTP_204_NO_CONTENT)
