@@ -9,4 +9,4 @@ urlpatterns = [
     path('', include('todo.urls')),
 ]
 
-urlpatterns += static(settings.MEDIA_URL, docuement_root=MEDIA_ROOT)
+urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
